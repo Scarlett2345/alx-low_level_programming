@@ -21,8 +21,8 @@ Use the function printf
 You are not allowed to use the function puts
 Your program should return 0
 Your program should compile without warning when using the -Wall gcc option<br/>
-julien@ubuntu:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c<br/>
-julien@ubuntu:~/c/0x00$ ./a.out <br/>
+julien@ubuntu:/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c<br/>
+julien@ubuntu:/c/0x00$ ./a.out <br/>
 6.Write a C program that prints the size of various types on the computer it is compiled and run on.
 You should produce the exact same output as in the example
 Warnings are allowed
