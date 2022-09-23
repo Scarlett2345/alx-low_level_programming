@@ -1,29 +1,28 @@
 #include "main.h"
 
 /**
- * *_strncat - This function concatenates two strings
- * but uses, at most, n bytes from src, and src does not need to be
- * null-terminated if it contains n or more bytes
- * @src: The string to append to dest
- * @dest: The string to concatenate with src
- * @n: The number of bytes to append
- * Return: The concatenated string
+ * _strncat - concatenate n bytes to destination string
+ * @dest: string to be appended to
+ * @src: string to append
+ * @n: append n number of bytes(chars)
+ * Return: concatenated string
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-   //while dest exists and isn't null terminator yet
-   while (*dest)
-       dest++;
-   // replace dest while src exists and insert nulls till n bytes
-   for (i = 0; i < n; i++)
-   {
-	while (*src)
+	int i = 0;
+	int j = 0;
+
+	while (dest[i] != '\0') /*i is index of null terminator*/
+		i++;
+
+	while (src[j] != src[n]) /*append replacing null terminator*/
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	*dest = '\0';
-   }
+	dest[i] = '\0';
+
+	return (dest);
 }
